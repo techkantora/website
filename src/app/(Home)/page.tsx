@@ -18,28 +18,28 @@ import StatCard from '@/components/ui/StatCard';
 export default function Home() {
   const services = [
     {
-      title: 'Power Apps',
+      title: 'Application Development & AI Agents',
       description:
         'Custom low-code applications tailored to your business processes',
       icon: '📱',
       color: 'from-blue-500 to-cyan-500',
     },
     {
-      title: 'Power Automate',
+      title: 'Customer Relationship Management (CRM) ',
       description: 'Streamline workflows and automate repetitive tasks',
       icon: '⚡',
       color: 'from-purple-500 to-pink-500',
     },
     {
-      title: 'Power BI',
+      title: 'Analytics & BI',
       description:
         'Transform data into actionable insights with stunning dashboards',
       icon: '📊',
       color: 'from-amber-500 to-orange-500',
     },
     {
-      title: 'Power Pages',
-      description: 'Build secure, enterprise-grade external-facing websites',
+      title: 'Process Automation',
+      description: 'Build intelligent automation',
       icon: '🌐',
       color: 'from-green-500 to-emerald-500',
     },
@@ -56,7 +56,7 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-pink-600/10" />
+        <div className="absolute inset-0 bg-blue-600/10 via-purple-600/10 to-pink-600/10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -64,19 +64,14 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full mb-6">
-              <Sparkles className="w-4 h-4 text-blue-600" />
-              <span className="text-sm font-medium text-blue-600">
-                Microsoft Power Platform Specialists
-              </span>
-            </div>
+            
 
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Transform Your Business
               <br />
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <h1 className="text-blue-900">
                 With Power Platform
-              </span>
+              </h1>
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -89,7 +84,7 @@ export default function Home() {
               <Link href={createPageUrl('Contact')}>
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-xl text-lg px-8 h-14"
+                  className="bg-teal-500 from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-xl text-lg px-8 h-14"
                 >
                   Start Your Project
                   <ArrowRight className="ml-2 w-5 h-5" />
