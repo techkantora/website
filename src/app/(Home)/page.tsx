@@ -69,9 +69,9 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Transform Your Business
               <br />
-              <h1 className="text-blue-900">
+              <span className="text-blue-900">
                 With Power Platform
-              </h1>
+              </span>
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
