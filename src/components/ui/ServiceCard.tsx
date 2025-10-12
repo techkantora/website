@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 interface ServiceCardProps {
   title: string;
@@ -22,11 +23,13 @@ export default function ServiceCard({ title, description, icon, color, index }: 
     >
       <Card className="group h-full overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer">
         <CardContent className="p-8">
-          <div
-            className={`w-16 h-16 bg-gradient-to-br ${color} rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-500`}
-          >
-            {icon}
-          </div>
+        <div>
+          <Image
+           src={icon}
+           width={100}
+           height={100} 
+           alt="image"/>
+        </div>
           <h3 className="text-2xl font-bold text-gray-900 mb-3">{title}</h3>
           <p className="text-gray-600 mb-4 leading-relaxed">{description}</p>
           <div className="flex items-center text-blue-600 font-medium group-hover:gap-3 gap-2 transition-all duration-300">

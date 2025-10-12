@@ -19,7 +19,7 @@ export default function ServicesPage() {
   const services: Service[] = [
     {
       title: "Power Apps Development",
-      icon: "📱",
+         icon: '/D365logo.webp',
       color: "from-blue-500 to-cyan-500",
       description: "Create custom applications without extensive coding. We build canvas and model-driven apps that streamline your business processes.",
       features: [
@@ -33,7 +33,7 @@ export default function ServicesPage() {
     },
     {
       title: "Power Automate Solutions",
-      icon: "⚡",
+        icon: '/D365logo.webp',
       color: "from-purple-500 to-pink-500",
       description: "Automate repetitive tasks and complex workflows. Connect your apps and services to streamline business processes.",
       features: [
@@ -47,7 +47,7 @@ export default function ServicesPage() {
     },
     {
       title: "Power BI Analytics",
-      icon: "📊",
+         icon: '/D365logo.webp',
       color: "from-amber-500 to-orange-500",
       description: "Transform your data into actionable insights. Build interactive dashboards and reports for data-driven decision making.",
       features: [
@@ -61,7 +61,7 @@ export default function ServicesPage() {
     },
     {
       title: "Power Pages Websites",
-      icon: "🌐",
+        icon: '/D365logo.webp',
       color: "from-green-500 to-emerald-500",
       description: "Build secure, low-code business websites. Create external-facing portals that integrate with your existing systems.",
       features: [

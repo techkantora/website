@@ -21,26 +21,26 @@ export default function Home() {
       title: 'Application Development & AI Agents',
       description:
         'Custom low-code applications tailored to your business processes',
-      icon: '📱',
+      icon: '/D365logo.webp',
       color: 'from-blue-500 to-cyan-500',
     },
     {
       title: 'Customer Relationship Management (CRM) ',
       description: 'Streamline workflows and automate repetitive tasks',
-      icon: '⚡',
+     icon: '/D365logo.webp',
       color: 'from-purple-500 to-pink-500',
     },
     {
       title: 'Analytics & BI',
       description:
         'Transform data into actionable insights with stunning dashboards',
-      icon: '📊',
+     icon: '/D365logo.webp',
       color: 'from-amber-500 to-orange-500',
     },
     {
       title: 'Process Automation',
       description: 'Build intelligent automation',
-      icon: '🌐',
+     icon: '/D365logo.webp',
       color: 'from-green-500 to-emerald-500',
     },
   ];
