@@ -12,10 +12,13 @@ import * as React from "react";
 interface ContactEmailProps {
   name: string;
   email: string;
+  company?: string;
+  phone?: string;
+  service_interest?:string;
   message: string;
 }
 
-export const ContactEmail = ({ name, email, message }: ContactEmailProps) => {
+export const ContactEmail = ({ name, email, company, phone,service_interest, message }: ContactEmailProps) => {
   return (
     <Html>
       <Head />
@@ -26,8 +29,11 @@ export const ContactEmail = ({ name, email, message }: ContactEmailProps) => {
             <Text style={{ fontSize: "18px", fontWeight: "bold" }}>
               New Contact Form Submission
             </Text>
-            <Text><strong>Name:</strong> {name}</Text>
+            <Text><strong>Full Name:</strong> {name}</Text>
             <Text><strong>Email:</strong> {email}</Text>
+            <Text><strong>Company</strong> {company}</Text>
+            <Text><strong>Phone Number</strong> {phone}</Text>
+             <Text><strong>Service Interest</strong> {service_interest}</Text>
             <Text><strong>Message:</strong></Text>
             <Text>{message}</Text>
           </Section>

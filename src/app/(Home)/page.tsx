@@ -9,6 +9,7 @@ import {
   TrendingUp,
   Users,
   CheckCircle,
+  Clock,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -46,10 +47,10 @@ export default function Home() {
   ];
 
   const stats = [
-    { value: '500+', label: 'Projects Delivered', icon: CheckCircle },
+    { value: '15+', label: 'Projects Delivered', icon: CheckCircle },
     { value: '98%', label: 'Client Satisfaction', icon: Users },
     { value: '10+', label: 'Years Experience', icon: TrendingUp },
-    { value: '50+', label: 'Enterprise Clients', icon: Sparkles },
+    { value: '24/7', label: 'Client Support', icon: Clock },
   ];
 
   return (
@@ -112,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-10">
+      <section className="py-10 bg-blue-600/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -171,7 +172,7 @@ export default function Home() {
             },
           ].map((phase, index) => (
             <div key={index} className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-white">
                   {phase.step}
                 </span>
@@ -185,7 +186,8 @@ export default function Home() {
         </div>
       </motion.div>
       {/* CTA Section */}
-      <section className="py-20 bg-teal-600">
+      
+      <section className="py-20 mx-20 my-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl shadow-2xl text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

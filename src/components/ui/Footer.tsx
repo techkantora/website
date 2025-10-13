@@ -6,6 +6,7 @@ import { createPageUrl } from '@/utils/createPageUrl';
 const navigationItems = [
   { name: 'Home', path: createPageUrl('Home') },
   { name: 'Services', path: createPageUrl('Services') },
+  { name: 'About', path: createPageUrl('About') },
   { name: 'Contact', path: createPageUrl('Contact') },
 ];
 
@@ -16,13 +17,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                <Zap className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-lg font-bold">PowerPro Consulting</h3>
+              
+              <h3 className="text-lg font-bold">Kantora Consulting</h3>
             </div>
             <p className="text-gray-400 text-sm">
-              Empowering businesses with Microsoft Power Platform solutions.
+              Empowering businesses with solutions.
             </p>
           </div>
           <div>
@@ -42,13 +41,13 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-sm text-gray-400">
-              <p>Email: contact@powerproconsulting.com</p>
-              <p>Phone: +1 (555) 123-4567</p>
+              <p>Email: techkantora@gmail.com</p>
+              <p>Phone: +1 (604) 644-3310</p>
             </div>
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>© 2024 PowerPro Consulting. All rights reserved.</p>
+          <p>© 2025 Kantora Consulting. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -12,7 +12,6 @@ export async function POST(req: Request) {
   try {
     const data  = await req.json();
     console.log(data);
-    console.log(process.env.SENDGRID_API_KEY);
     sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
     const html = await render(createElement(ContactEmail, data));

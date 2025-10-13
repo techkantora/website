@@ -73,7 +73,7 @@ export default function ContactPage() {
             Get In Touch
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ready to transform your business? Let's discuss your Power Platform needs
+            Ready to transform your business? Let's discuss how we can help.
           </p>
         </motion.div>
 
@@ -210,11 +210,12 @@ export default function ContactPage() {
                           <SelectValue placeholder="Select a service" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="Power Apps">Power Apps</SelectItem>
-                          <SelectItem value="Power Automate">Power Automate</SelectItem>
-                          <SelectItem value="Power BI">Power BI</SelectItem>
-                          <SelectItem value="Power Pages">Power Pages</SelectItem>
-                          <SelectItem value="Full Suite">Full Suite</SelectItem>
+                          <SelectItem value="Application Development">Application Development</SelectItem>
+                          <SelectItem value="Process Automation">Process Automation</SelectItem>
+                          <SelectItem value="Power BI Analytics">Power BI Analytics</SelectItem>
+                          <SelectItem value="Dynamics 365">Dynamics 365</SelectItem>
+                          <SelectItem value="Web Development">Web Development</SelectItem>
+                          <SelectItem value="Building a MVP">MVP development</SelectItem>
                           <SelectItem value="Not Sure">Not Sure</SelectItem>
                         </SelectContent>
                       </Select>
@@ -235,7 +236,7 @@ export default function ContactPage() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white h-12 text-base"
+                      className="w-full bg-blue-600 hover:from-blue-700 hover:to-purple-700 text-white h-12 text-base"
                     >
                       {isSubmitting ? (
                         <>

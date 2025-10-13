@@ -74,7 +74,7 @@ export default function AboutPage() {
     {
       name: 'Brandon Kan',
       role: 'Principle',
-      bio: '10+ years of Microsoft technology leadership with a passion for digital transformation',
+      bio: 'A decade of technology consulting expertise, empowering businesses to achieve digital transformation with efficiency and innovation',
       image:
         '/BrandonHeadshot.jpg',
       expertise: [
@@ -95,7 +95,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="py-20">
+    <div className="py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Our Story */}
         <motion.div
@@ -111,7 +111,7 @@ export default function AboutPage() {
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">Our Story</h2>
+                <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
               </div>
               <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
@@ -194,8 +194,7 @@ export default function AboutPage() {
               Meet Our Team
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Experienced professionals passionate about Power Platform
-              excellence
+              Experienced professionals passionate about technology and innovation
             </p>
           </div>
 
@@ -225,7 +224,6 @@ export default function AboutPage() {
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Let's discuss how our expertise can help transform your business
-            with Power Platform
           </p>
           <Link href="/contact">
             <Button
