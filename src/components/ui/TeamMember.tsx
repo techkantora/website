@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import React from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
 interface TeamMemberProps {
   name: string;
@@ -15,13 +15,13 @@ interface TeamMemberProps {
   index: number;
 }
 
-export default function TeamMember({ 
-  name, 
-  role, 
-  bio, 
-  image, 
-  expertise, 
-  index 
+export default function TeamMember({
+  name,
+  role,
+  bio,
+  image,
+  expertise,
+  index,
 }: TeamMemberProps) {
   return (
     <motion.div
@@ -31,34 +31,34 @@ export default function TeamMember({
       viewport={{ once: true }}
     >
       <Card className="border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <CardContent className="p-0">
-          <div className="relative h-64 overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100">
-            <Image 
-              src={image} 
+        <CardContent className="p-6 flex flex-col items-center text-center">
+          {/* ✅ Image Section */}
+          <div className="relative w-63 h-63 overflow-hidden border-rounded-full">
+            <Image
+              src={image}
               alt={name}
               fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-contain" // ✅ Shows the entire image
+              sizes="256px"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </div>
-          
-          <div className="p-6">
-            <h3 className="text-2xl font-bold text-gray-900 mb-1">{name}</h3>
-            <p className="text-blue-600 font-medium mb-4">{role}</p>
-            <p className="text-gray-600 mb-4 leading-relaxed">{bio}</p>
-            
-            <div className="flex flex-wrap gap-2">
-              {expertise.map((skill, idx) => (
-                <Badge 
-                  key={idx} 
-                  variant="secondary"
-                  className="bg-blue-50 text-blue-700 hover:bg-blue-100"
-                >
-                  {skill}
-                </Badge>
-              ))}
-            </div>
+
+          {/* ✅ Text Section */}
+          <h3 className="text-2xl font-bold text-gray-900 mb-1">{name}</h3>
+          <p className="text-blue-600 font-medium mb-4">{role}</p>
+          <p className="text-gray-600 mb-4 leading-relaxed">{bio}</p>
+
+          {/* ✅ Expertise Tags */}
+          <div className="flex flex-wrap justify-center gap-2">
+            {expertise.map((skill, idx) => (
+              <Badge
+                key={idx}
+                variant="secondary"
+                className="bg-blue-50 text-blue-700 hover:bg-blue-100"
+              >
+                {skill}
+              </Badge>
+            ))}
           </div>
         </CardContent>
       </Card>
